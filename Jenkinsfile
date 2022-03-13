@@ -13,21 +13,21 @@ pipeline {
         }
     }
 
-    stages {
+    
         stage('Rodrigue') {
             steps {
                 echo 'Rodrigue World'
             }
         }
-    }
+    
 
-    stages {
+    
         stage('Succes') {
             steps {
                 echo 'Succes World'
             }
         }
-    }
+    
 
    
 
