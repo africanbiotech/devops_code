@@ -1,8 +1,8 @@
 pipeline {
     agent any
-     triggers {
+    triggers {
   pollSCM '* * * * *'
-}
+    }
     stages {
         stage('Hello') {
             steps {
@@ -11,7 +11,7 @@ pipeline {
          
             
         }
-    }
+    
 
     
         stage('Rodrigue') {
@@ -27,7 +27,7 @@ pipeline {
                 echo 'Succes World'
             }
         }
-    
+    }
 
    
 
