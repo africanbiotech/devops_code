@@ -28,7 +28,7 @@ pipeline {
         }
     
 
-    stage('Maven') {
+        stage('Maven') {
             steps {
                 echo 'Maven World'
                 sh 'mvn --version'
