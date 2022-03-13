@@ -21,7 +21,7 @@ pipeline {
         }
     }
 
-stages {
+    stages {
         stage('Succes') {
             steps {
                 echo 'Succes World'
