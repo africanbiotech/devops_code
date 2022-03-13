@@ -32,10 +32,10 @@ pipeline {
             steps {
                 echo 'Maven World'
                 sh 'mvn --version'
-            }   sh 'test'
-        }       sh 'clean'
-                sh 'install'
-                sh 'package'
+            }   sh ' mvn test'
+        }       sh 'mvn clean'
+                sh 'mvn install'
+                sh 'mvn package'
             
         stage('Succes') {
             steps {
