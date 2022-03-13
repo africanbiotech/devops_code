@@ -28,15 +28,18 @@ pipeline {
         }
     
 
-        stage('Maven') {
+        stage('Happyness') {
             steps {
                 echo 'Maven World'
                 sh 'mvn --version'
-            }   sh ' mvn test'
-        }       sh 'mvn clean'
+              sh ' mvn test'
+                sh 'mvn clean'
                 sh 'mvn install'
                 sh 'mvn package'
-            
+            }
+        }
+
+
         stage('Succes') {
             steps {
                 echo 'Succes World'
